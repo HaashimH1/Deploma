@@ -11,7 +11,7 @@
 
 /* general style rules */
 body{
-    background-color:black;
+    background-color:#00101d;
     min-height: 100vh;
     display:flex;
     flex-direction: column;
@@ -20,19 +20,41 @@ body{
 }
 
 header{
-   background-color:black;
-   min-height: 10vh;
+   height: 10vh;
+   width: 100%;
    border: 2px solid red;
 }
 
 main{
-background-color: black;
 border: 2px solid red;
 flex: 1 0 auto;
 }
 
 footer{
-    background-color: black;
     border: 2px solid red;
     min-height:7vh;
+}
+nav{
+
+    width: 100%; /* Inherits the width of the header */
+    height: 100%; /* Inherits the height of the header */
+    display: flex;
+    flex-direction: row;
+}
+#nav-left{
+
+    background-color: blueviolet;
+    flex:1 1 20vw;
+
+}
+#nav-mid{
+    background-color: blanchedalmond;
+    flex:1 1 50vw;
+    
+}
+#nav-right{
+
+    background-color: darkgreen;
+    flex:1 1 30vw;
+    
 }
