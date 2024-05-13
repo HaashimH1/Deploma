@@ -4,65 +4,70 @@
 /* wildcard selectoe to reset all browser default style rules */
 * {
 
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;  /* Sets the base font size to 16px */
+}
+
 /* general style rules */
-body{
-    background-color:#000000;
+body {
+    background-color:white;
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    color:teal;
+    color: black;
     font-family: 'Rubik';
+    font-size: 1rem;
 }
 
-header{
-   height: 10vh;
-   width: 100%;
-   border: 2px solid red;
-}
-
-main{
-border: 2px solid red;
-flex: 1 0 auto;
-}
-
-footer{
+header {
+    height: 5rem;
+    width: 100%;
     border: 2px solid red;
-    min-height:7vh;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-nav{
 
-    width: 100%; /* Inherits the width of the header */
-    height: 100%; /* Inherits the height of the header */
+main {
+    border: 2px solid red;
+    flex: 1 0 auto;
+}
+
+footer {
+    border: 2px solid red;
+    height: 5rem;
+}
+
+nav {
+
+    width: 90%;
+    height: 100%;
+    background-color:grey;
+    align-items: center;
     display: flex;
     flex-direction: row;
-}
-#nav-left{
-
-    background-color: blueviolet;
-    flex:2 1 20vw;
-
-}
-#nav-mid{
-    background-color: blanchedalmond;
-    flex:0 1.4 70vw;
-    
-}
-#nav-right{
-
-    background-color: darkgreen;
-    flex:2 0 10vw;
-    
+    justify-content: space-around;
+ 
 }
 
-#nav-logo{
+.nav-icons{
 
-    width:60%;
-    height: 80%;
-    border-radius: 10px;
-    align-self: center;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+
+
+
+/* Media query - tablets and larger (768px) */
+
+@media screen and (min-width:768px) {
+
+
 }
