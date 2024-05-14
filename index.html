@@ -30,25 +30,26 @@
 
     <!-- nav bar-->
     <header>
+
+        <!-- main nav bar (without dropdown menu for mobile)-->
         <nav id="nav-main">
 
             <div id="nav-left">
-                <button id="nav-toggle" name="nav-toggle">☰</button>
+                <button id="nav-toggle" class="nav-icons" name="nav-toggle">☰</button>
             </div>
             <div id="nav-mid">
                 <!-- logo -->
                 <a href="/">
-                    <img src="/assets/images/placeholder_logo.png" alt="Your Brand Name Logo" class="nav-icons"
-                        id="nav-logo">
+                    <img src="/assets/images/placeholder_logo.png" alt="Your Brand Name Logo" class="nav-icons">
                 </a>
             </div>
+            <!-- right nav div only serves to fill the space-->
             <div id="nav-rightfill">
 
-                3
-
-            </div>
+               <div class="nav-icons">fill</div>
         </nav>
 
+        <!-- dropdown menu only for mobile-->
         <nav id="nav-dropdown">
             <div class="nav-dropdown-pages">Introduction</div>
             <div class="nav-dropdown-pages">Page 2</div>
