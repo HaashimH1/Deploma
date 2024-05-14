@@ -75,23 +75,30 @@ footer {
     padding-bottom: 1rem;
     align-items:center;
     display: none;
+
+}
+
+
+/* button to toggle dropdown menu*/
+#nav-toggle{
+
+    background-color: red;
+    border: none;
+
 }
 
  
-/* nav toggle functionality */
-#nav-toggle:checked+#nav-dropdown{
-
-    display:block;
 
 
-}
-
+/* main nav content (logo, dropdown menu toggle etc..) */
 .nav-icons{
 
     height: 4.5rem;
     width: 4.5rem;
 }
 
+
+/* pages in dropdown menu */
 .nav-dropdown-pages{
 
     width: 100%;
