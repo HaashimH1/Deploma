@@ -57,6 +57,8 @@ footer {
  
 }
 
+
+/* mobile phone dropdown menu */
 #nav-dropdown{
 
     position: absolute;
@@ -72,6 +74,16 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-items:center;
+    display: none;
+}
+
+ 
+/* nav toggle functionality */
+#nav-toggle:checked+#nav-dropdown{
+
+    display:block;
+
+
 }
 
 .nav-icons{
