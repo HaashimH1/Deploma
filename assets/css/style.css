@@ -34,6 +34,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:white;
+    background-color: black;
 }
 
 main {
@@ -55,7 +57,6 @@ footer {
 
 /* pages in dropdown menu */
 .nav-dropdown-pages {
-
     width: 100%;
     height: 5rem;
     text-align: center;
@@ -71,18 +72,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
-/* always filler div on the right of nav bar, no matter the screen size */
+
 #nav-right {
-    background-color: red;
+    font-size: 0;
 }
 
 #nav-main {
     width: 100%;
     height: 100%;
-    background-color: grey;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -111,7 +110,8 @@ footer {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: none;          /* hides dropdown menu on start */
+    display: none;
+    /* hides dropdown menu on start */
 }
 
 /* button to toggle dropdown menu*/
@@ -122,6 +122,7 @@ footer {
     background: none;
 }
 
+
 /* Media query - tablets and larger (768px) */
 
 @media screen and (min-width:768px) {
@@ -129,8 +130,10 @@ footer {
     body {
         font-size: 1.125rem;
     }
-    header{
-        padding:0 3em;
+
+    /* increased padding for bigger screen */
+    header {
+        padding: 0 3em;
     }
 
 
@@ -140,16 +143,44 @@ footer {
     }
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
-    #nav-right{
-
-        order:2;
-        width: 60%;
+    #nav-right {
+        font-size:1em;
+        order: 2;
+        width: 28em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2em;
     }
 
     /* mobile dropdown div now becomes the filler div for bigger screens */
     #nav-left {
         order: 3;
-        display: hidden;
+        background: none;
+    }
+
+
+    /* removes dropdown button for larger screen sizes */
+    #nav-toggle {
+        font-size: 0;
+    }
+
+    /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
+    .nav-main-pages{
+        display: flex;
+        align-items: center;
+        height:3.5rem;
+        width: auto;
+        padding: 0 1em;
+        border: .15em solid black;
+        border-radius: 1em;
+    }
+
+
+    /* hover animation */
+    .nav-main-pages:hover{
+       border-color: white;
     }
 
 
