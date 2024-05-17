@@ -42,7 +42,7 @@ main {
     padding: 1em 1em;
     width:100%;
     height: 100%;
-    background-color: #e5e5e5;
+    background-color: rgb(245, 245, 247);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -82,15 +82,46 @@ h1{
 }
 
 /* section styles within main content */
-.main-sections{
+.main-pages{
     background-color: white;
     border-radius: 1em;
+}
+
+/* sections within pages default properties */
+.main-sec-defprop{
+    width: 100%;
+    height: 50%;
 }
 
 /* intro section */
 #main-intro{
     width: auto;
     height: 25em;
+    display: flex;
+    flex-direction: column;
+    padding:1em;
+}
+
+#main-intro-sec1{
+
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main-intro-sec2{
+
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 /* centers dropdown button in center */
@@ -136,8 +167,9 @@ h1{
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: none;
-    /* hides dropdown menu on start */
+    display: none;     /* hides dropdown menu on start */
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 /* button to toggle dropdown menu*/
