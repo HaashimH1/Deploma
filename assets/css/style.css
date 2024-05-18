@@ -46,7 +46,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1.5em;
+    gap: 10em;
 
 }
 
@@ -58,9 +58,11 @@ footer {
 
 
 /* mobile phone breaks into 2 rows, both rows are centered */
-h1{
+h1,h2{
      text-align: center;
 }
+
+
 
 /* main nav content (logo, dropdown menu toggle etc..) */
 .nav-icons {
@@ -78,11 +80,21 @@ h1{
     align-items: center;
     justify-content: center;
     border: .15rem solid white;
-    border-radius: 1rem;
+    border-radius: .75rem;
 }
 
-/* section styles within main content */
+
+/* each page have significant gap */
 .main-pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+
+/* section styles within main content */
+.main-page-segments{
     background-color: white;
     border-radius: 1em;
 }
@@ -111,6 +123,17 @@ h1{
 #main-intro{
     width: auto;
     height: 50em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+
+
+/* timeline section */
+#main-timeline{
+    width: auto;
+    height: 100em;
     display: flex;
     flex-direction: column;
     padding: 1em;
