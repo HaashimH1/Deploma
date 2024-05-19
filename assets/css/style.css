@@ -33,19 +33,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
     background-color: black;
 }
 
 main {
     flex: 1 0 300em;
     padding: 1.5em 1em;
-    width:100%;
+    width: 100%;
     height: 100%;
     background-color: rgb(245, 245, 247);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     gap: 10em;
 
 }
@@ -58,8 +59,9 @@ footer {
 
 
 /* mobile phone breaks into 2 rows, both rows are centered */
-h1,h2{
-     text-align: center;
+h1,
+h2 {
+    text-align: center;
 }
 
 
@@ -85,7 +87,7 @@ h1,h2{
 
 
 /* each page have significant gap */
-.main-pages{
+.main-pages {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -94,18 +96,18 @@ h1,h2{
 
 
 /* section styles within main content */
-.main-page-segments{
+.main-page-segments {
     background-color: white;
     border-radius: 1em;
 }
 
 /* sections within pages default properties */
-.main-sec-defprop{
+.main-sec-defprop {
     width: 100%;
     height: inherit;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,32 +115,32 @@ h1,h2{
     gap: 1.5em;
 }
 
-.intro-images{
-    width:10em;
-    height:10em;
+.intro-images {
+    width: 10em;
+    height: 10em;
 }
 
 
 /* timeline page segment general rules */
-.timeline-event{
+.timeline-event {
 
     width: 100%;
     height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     text-align: center;
 }
 
-.timeline-image{
+.timeline-image {
     width: 10em;
     height: 10em;
 }
 
 
 /* intro section */
-#main-intro{
+#main-intro {
     width: auto;
     height: 50em;
     display: flex;
@@ -149,7 +151,7 @@ h1,h2{
 
 
 /* timeline section */
-#main-timeline{
+#main-timeline {
     width: auto;
     height: 150em;
     display: flex;
@@ -158,7 +160,7 @@ h1,h2{
     gap: 5em;
 }
 
-#main-ref{
+#main-ref {
     width: auto;
     height: 50em;
     display: flex;
@@ -214,7 +216,8 @@ h1,h2{
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: none;     /* hides dropdown menu on start */
+    display: none;
+    /* hides dropdown menu on start */
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
@@ -249,7 +252,7 @@ h1,h2{
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
     #nav-right {
-        font-size:1em;
+        font-size: 1em;
         order: 2;
         width: 28em;
         display: flex;
@@ -272,10 +275,10 @@ h1,h2{
     }
 
     /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
-    .nav-main-pages{
+    .nav-main-pages {
         display: flex;
         align-items: center;
-        height:3.5rem;
+        height: 3.5rem;
         width: auto;
         padding: 0 1em;
         border: .15em solid black;
@@ -284,8 +287,34 @@ h1,h2{
 
 
     /* hover animation */
-    .nav-main-pages:hover{
-       border-color: white;
+    .nav-main-pages:hover {
+        border-color: white;
+    }
+
+
+/* makes page intro smaller */
+#main-intro{
+    height: 30em;
+}    
+
+.main-intro-sec{
+    flex-direction: row;
+}
+
+
+    /* all main content rules for bigger screens */
+
+
+    main {
+        padding: 3em 2em;
+    }
+
+    .main-pages {
+
+        min-width: 40em;
+        max-width: 60em;
+        width: 100%;
+        gap: 2em;
     }
 
 
