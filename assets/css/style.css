@@ -302,6 +302,11 @@ h2 {
     /* hover animation */
     .nav-main-pages:hover {
         border-color: white;
+        background-color: white;
+        color: black;
+
+        transition: all;
+        transition-duration: 0.3s;
     }
 
 
