@@ -144,6 +144,10 @@ h2 {
     gap:1em;
 }
 
+.timeline-event-content-list{
+    list-style:inside disc;
+}
+
 
 /* intro section */
 #main-intro {
@@ -159,7 +163,7 @@ h2 {
 /* timeline section */
 #main-timeline {
     width: auto;
-    height: 150em;
+    height: 250em;
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -323,16 +327,17 @@ h2 {
     }
 
     #main-timeline{
-        height:120em;
+        height:150em;
     }
 
     .timeline-event-content{
         flex-direction: row;
-        gap:1em;
+        gap:2em;
         text-align: center;
         align-items: center;
         justify-content: space-between;
-        padding:0em 3em;
+        padding:0em 1em;
+        height: 20em;
 
     }
 
@@ -346,6 +351,14 @@ h2 {
 
     #main-ref{
         height:40em;
+    }
+
+    .timeline-event-content-list{
+        list-style: none;
+    }
+    
+    ul li {
+        margin-bottom: 0.5em;
     }
 
 
