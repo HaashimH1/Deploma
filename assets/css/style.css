@@ -38,7 +38,7 @@ header {
 }
 
 main {
-    flex: 1 0 200em;
+    flex: 1 0 300em;
     padding: 1.5em 1em;
     width:100%;
     height: 100%;
@@ -119,6 +119,24 @@ h1,h2{
 }
 
 
+/* timeline page segment general rules */
+.timeline-event{
+
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.timeline-image{
+    width: 10em;
+    height: 10em;
+}
+
+
 /* intro section */
 #main-intro{
     width: auto;
@@ -133,11 +151,11 @@ h1,h2{
 /* timeline section */
 #main-timeline{
     width: auto;
-    height: 100em;
+    height: 150em;
     display: flex;
     flex-direction: column;
     padding: 1em;
-    gap: 1em;
+    gap: 5em;
 }
 
 
