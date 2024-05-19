@@ -158,6 +158,17 @@ h1,h2{
     gap: 5em;
 }
 
+#main-ref{
+    width: auto;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    gap: 3em;
+    text-align: center;
+}
+
 
 
 /* centers dropdown button in center */
