@@ -68,6 +68,12 @@ h2 {
     text-align: center;
 }
 
+#nav-right a, nav a{
+    text-decoration: none;/* Remove underline */
+    color: inherit;/* Inherit text color from parent */
+    cursor: pointer;/* Add pointer cursor */
+}
+
 /* main nav content (logo, dropdown menu toggle etc..) */
 .nav-icons {
     height: 4.5rem;
@@ -85,6 +91,8 @@ h2 {
     justify-content: center;
     border: .15rem solid white;
     border-radius: .75rem;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 
@@ -159,8 +167,6 @@ h2 {
     height: auto;
     width: auto;
 }
-
-
 
 /* intro section */
 #main-intro {
@@ -268,7 +274,7 @@ h2 {
     }
 
     main {
-        padding: 3em 2em;
+        padding:3em 2em;
     }
 
     /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
@@ -327,7 +333,7 @@ h2 {
     .timeline-event-content-4 {
         flex-direction: row-reverse;
     }
-
+    
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
     #nav-right {
