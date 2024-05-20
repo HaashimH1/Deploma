@@ -36,11 +36,12 @@ header {
     color: white;
     background-color: black;
     position: fixed;
-    
+
 }
 
 main {
-    margin-top:5em;  /* because header is fixed and will overlap */
+    margin-top: 5em;
+    /* because header is fixed and will overlap */
     flex: 1 0 auto;
     padding: 1.5em 1em;
     width: 100%;
@@ -67,8 +68,6 @@ h2 {
     text-align: center;
 }
 
-
-
 /* main nav content (logo, dropdown menu toggle etc..) */
 .nav-icons {
     height: 4.5rem;
@@ -94,7 +93,8 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 1em;
-
+    height: auto;
+    width: auto;
 }
 
 
@@ -127,7 +127,7 @@ h2 {
 /* timeline page segment general rules */
 .timeline-event {
     width: 100%;
-    height: inherit;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,25 +142,34 @@ h2 {
 }
 
 
-.timeline-event-content{
+.timeline-event-content {
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
-    gap:1em;
+    gap: 1em;
+    justify-content: space-between;
 }
 
-.timeline-event-content-list{
-    list-style:inside disc;
+.timeline-event-content-list {
+    list-style: inside disc;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    height: auto;
+    width: auto;
 }
+
 
 
 /* intro section */
 #main-intro {
     width: auto;
-    height: 50em;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 1em;
-    gap: 1em;
+    gap: 3em;
 }
 
 
@@ -171,17 +180,17 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    gap: 5em;
+    gap: 6em;
 }
 
 #main-ref {
     width: auto;
-    height: 50em;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1em;
-    gap: 3em;
+    padding: 2em 1em;
+    gap: 2em;
     text-align: center;
 }
 
@@ -230,7 +239,8 @@ h2 {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: none;  /* hides dropdown menu on start */
+    display: none;
+    /* hides dropdown menu on start */
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
@@ -257,11 +267,67 @@ h2 {
         padding: 0 3em;
     }
 
-
-    /* places logo on left of nav bar*/
-    #nav-mid {
-        order: 1;
+    main {
+        padding: 3em 2em;
     }
+
+    /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
+    .nav-main-pages {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        width: auto;
+        padding: 0 1em;
+        border: .15em solid black;
+        border-radius: 1em;
+    }
+
+
+    /* hover animation */
+    .nav-main-pages:hover {
+        border-color: white;
+        background-color: white;
+        color: black;
+
+        transition: all;
+        transition-duration: 0.3s;
+    }
+
+    .main-intro-sec {
+        flex-direction: row;
+    }
+
+
+    .main-pages {
+        min-width: 40em;
+        max-width: 60em;
+        width: 100%;
+        gap: 2em;
+    }
+
+    #main-timeline {
+        padding: 3em 1.5em;
+    }
+
+    .timeline-event-content {
+        flex-direction: row;
+        gap: 2em;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0em 1em;
+        height: auto;
+
+    }
+
+    .timeline-event-content-2 {
+        flex-direction: row-reverse;
+    }
+
+    .timeline-event-content-4 {
+        flex-direction: row-reverse;
+    }
+
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
     #nav-right {
@@ -287,83 +353,25 @@ h2 {
         font-size: 0;
     }
 
-    /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
-    .nav-main-pages {
-        display: flex;
-        align-items: center;
-        height: 3.5rem;
-        width: auto;
-        padding: 0 1em;
-        border: .15em solid black;
-        border-radius: 1em;
-    }
-
-
-    /* hover animation */
-    .nav-main-pages:hover {
-        border-color: white;
-        background-color: white;
-        color: black;
-
-        transition: all;
-        transition-duration: 0.3s;
-    }
-
-
-/* makes page intro smaller */
-#main-intro{
-    height: 30em;
-}    
-
-.main-intro-sec{
-    flex-direction: row;
-}
-
-
-    /* all main content rules for bigger screens */
-
-
-    main {
-        padding: 3em 2em;
-    }
-
-    .main-pages {
-        min-width: 40em;
-        max-width: 60em;
-        width: 100%;
-        gap: 2em;
-    }
-
-    #main-timeline{
+    /* makes page intro smaller */
+    #main-intro {
+        height: auto;
         padding: 3em 1.5em;
     }
 
-    .timeline-event-content{
-        flex-direction: row;
-        gap:2em;
-        text-align: center;
-        align-items: center;
-        justify-content: space-between;
-        padding:0em 1em;
-        height: 20em;
 
+    /* places logo on left of nav bar*/
+    #nav-mid {
+        order: 1;
     }
 
-    .timeline-event-content-2{
-        flex-direction: row-reverse;
+    #main-ref {
+        width: auto;
+        padding: 3em 1.5em;
+        gap: 3em;
     }
 
-    .timeline-event-content-4{
-        flex-direction: row-reverse;
-    }
 
-    #main-ref{
-        height:40em;
-    }
-    
-    ul li {
-        margin-bottom: 0.5em;
-    }
 
 
 
