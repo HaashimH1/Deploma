@@ -194,7 +194,6 @@ nav a {
 }
 
 .ref-content-ul{
-    margin-left:4em;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -343,6 +342,16 @@ nav a {
         transition-duration: 0.3s;
     }
 
+     /* click animation for touchscreen (tablets, ipads etc) */
+     .nav-main-pages:active {
+        border-color: white;
+        background-color: white;
+        color: black;
+
+        transition: all;
+        transition-duration: 0.3s;
+    }
+
     .main-intro-sec {
         flex-direction: row;
     }
@@ -376,6 +385,14 @@ nav a {
 
     .timeline-event-content-4 {
         flex-direction: row-reverse;
+    }
+
+    .ref-content-h3{
+        margin-left:2em;
+    }
+
+    .ref-content-ul{
+        margin-left:4em;
     }
 
 
