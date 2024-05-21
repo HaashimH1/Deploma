@@ -68,10 +68,14 @@ h2 {
     text-align: center;
 }
 
-#nav-right a, nav a{
-    text-decoration: none;/* Remove underline */
-    color: inherit;/* Inherit text color from parent */
-    cursor: pointer;/* Add pointer cursor */
+#nav-right a,
+nav a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit text color from parent */
+    cursor: pointer;
+    /* Add pointer cursor */
 }
 
 /* main nav content (logo, dropdown menu toggle etc..) */
@@ -168,6 +172,35 @@ h2 {
     width: auto;
 }
 
+.ref-content-container{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 1em;
+
+    padding: 1em 2em;
+
+}
+
+
+.ref-content-h3{
+
+    margin-left:2em;
+    
+}
+
+.ref-content-ul{
+    margin-left:4em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
 /* intro section */
 #main-intro {
     width: auto;
@@ -198,6 +231,17 @@ h2 {
     padding: 2em 1em;
     gap: 2em;
     text-align: center;
+}
+
+#ref-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
 }
 
 
@@ -274,7 +318,7 @@ h2 {
     }
 
     main {
-        padding:3em 2em;
+        padding: 3em 2em;
     }
 
     /* nav pages on bigger screen sizes (in the main nav bar instead of dropdown menu */
@@ -333,7 +377,7 @@ h2 {
     .timeline-event-content-4 {
         flex-direction: row-reverse;
     }
-    
+
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
     #nav-right {
