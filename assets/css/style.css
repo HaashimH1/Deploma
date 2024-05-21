@@ -133,6 +133,7 @@ nav a {
 .intro-images {
     width: 10em;
     height: 10em;
+    border-radius: 0.25em;
 }
 
 
