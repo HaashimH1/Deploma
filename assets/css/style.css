@@ -152,6 +152,8 @@ nav a {
 .timeline-image {
     width: 10em;
     height: 10em;
+
+    border-radius: 0.25em;
 }
 
 
@@ -365,9 +367,20 @@ nav a {
         gap: 2em;
     }
 
-    #main-timeline {
-        padding: 3em 1.5em;
+
+    .intro-images{
+        width: 12.5em;
+        height: 12.5em;
+        border-radius: 0.5em;
     }
+
+
+    .timeline-image{
+
+        width: 12.5em;
+        height: 12.5em;
+        border-radius: 0.5em;
+        }
 
     .timeline-event-content {
         flex-direction: row;
@@ -396,6 +409,10 @@ nav a {
         margin-left:4em;
     }
 
+
+    #main-timeline {
+        padding: 3em 1.5em;
+    }
 
     /* uses the filler div used on mobile, as the page links in middle of nav bar */
     #nav-right {
