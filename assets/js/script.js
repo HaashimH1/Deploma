@@ -20,8 +20,13 @@ document.querySelectorAll('nav a, #nav-right a').forEach(anchor => {
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition - offset;
 
+        var dropdown_button = document.getElementById('nav-toggle');
+        dropdown_button.innerText='☰';
+
         var content = document.getElementById('nav-dropdown');
         content.style.display='none';           // removes dropdown display when link clicked on mobile
+
+  
 
         window.scrollBy({
             top: offsetPosition,
