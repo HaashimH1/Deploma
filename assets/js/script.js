@@ -1,9 +1,12 @@
 document.getElementById('nav-toggle').addEventListener('click', function() {
     var content = document.getElementById('nav-dropdown');
+    var dropdown_button = document.getElementById('nav-toggle');
     if (content.style.display === 'flex') {
         content.style.display = 'none';
+        dropdown_button.innerText='☰';
     } else {
         content.style.display = 'flex';
+        dropdown_button.innerText='🡻';
     }
 });
 
