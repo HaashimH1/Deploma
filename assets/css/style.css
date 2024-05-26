@@ -1,5 +1,5 @@
 /* GOOGLE FONTS IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* wildcard selectoe to reset all browser default style rules */
 * {
@@ -16,12 +16,12 @@ html {
 
 /* general style rules */
 body {
-    background-color: red;
+    background-color:gray;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: black;
-    font-family: 'Rubik';
+    font-family: 'Nunito';
     font-size: 1rem;
 }
 
@@ -51,6 +51,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 10em;
+    padding-bottom: 1em;
 
 }
 
