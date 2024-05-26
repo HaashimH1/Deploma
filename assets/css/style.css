@@ -43,15 +43,14 @@ main {
     margin-top: 5em;
     /* because header is fixed and will overlap */
     flex: 1 0 auto;
-    padding: 1.5em 1em;
     width: 100%;
     height: 100%;
-    background-color: rgb(245, 245, 247);
+    background-color: #F7F7F7;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 10em;
+    gap:10em;
 
 }
 
@@ -107,13 +106,16 @@ nav a {
     gap: 1em;
     height: auto;
     width: auto;
+    padding:0em 0.5em;
+    margin-top: -5em;
+    align-items: center;
 }
 
 
 /* section styles within main content */
 .main-page-segments {
     background-color: white;
-    border-radius: 1em;
+    border-radius: 5px;
 }
 
 /* sections within pages default properties */
@@ -133,7 +135,6 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
     gap: 1em;
 }
 
@@ -164,7 +165,6 @@ nav a {
 }
 
 .ref-content-container {
-
     width: 100%;
     height: auto;
     display: flex;
@@ -172,15 +172,7 @@ nav a {
     justify-content: space-between;
     align-items: flex-start;
     gap: 1em;
-
-    padding: 1em 2em;
-
-}
-
-
-.ref-content-h3 {
-
-    margin-left: 2em;
+    padding: 1em 0em;
 
 }
 
@@ -219,8 +211,7 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     padding: 2em 1em;
-    gap: 2em;
-    text-align: center;
+    gap: 10em;
 }
 
 #footer-content-container{
@@ -244,7 +235,6 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
 }
 
 #main-intro-sec2 {
@@ -263,25 +253,27 @@ nav a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
 
 }
 
 
 #main-intro-message-container {
     width: 100%;
-    height: 15em;
+    height: 10em;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    border: 2px black solid;
-    border-radius: 1em;
-    background-color: rgb(245, 245, 247);
-    padding: 0em 1em;
-    text-align: center;
-    font-weight: 450;
-    font-size: 1.125em;
+    padding: 1em;
+    background-color: #222222;
+    align-items: flex-start;
+    color: white;
+}
+
+#intro-image1 {
+    width: 100%;
+    height: auto;   
+    border-radius: 2px;
 }
 
 /* centers dropdown button in center */
@@ -394,7 +386,7 @@ nav a {
 
     .main-pages {
         min-width: 40em;
-        max-width: 65em;
+        max-width: 70em;
         width: 100%;
         gap: 2em;
     }
@@ -446,11 +438,6 @@ nav a {
         min-height: 15em;
         height: auto;
 
-    }
-
-    #intro-image1 {
-        width: 17em;
-        height: auto;
     }
 
     #main-intro-sec1 {
