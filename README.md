@@ -56,7 +56,7 @@ This site consits of 5 main sections: Navigation bar, 3 pages and a footer. The 
       * ![Page 3 Smaller screens](assets/images/readme_14.png)
 * Footer
   * Only purpose of the footer is to provide a link to my github, in the form of clickable github logo, and some text naming the author of this website. Footer copys the design and colour scheme of the Nav bar to again emphasize to the user the much different purpose and content of these bars.
-  * Bigger and smaller screens only differences are the position of the content container, as theres not any necesity to design the 
+  * Bigger and smaller screens only differences are the position of the content container, as theres not any necesity to design the content differently because of the small amount of content placed here.
     * Smaller Screens
       * ![Footer Smaller screens](assets/images/readme_16.png)
     * Bigger Screens
@@ -64,5 +64,32 @@ This site consits of 5 main sections: Navigation bar, 3 pages and a footer. The 
 
 
 ## Testing
+
+| Action                              | Expected Result              | Pass/Fail |
+|-------------------------------------|------------------------------|-----------|
+| Dropdown button, when closed        | Shows dropdown menu          | Pass      |
+| Dropdown button, when open          | Hide dropdown menu           | Pass      |
+| Dropdown button content             | Button text changes          | Pass      |
+| Dropdown Page clicked               | Hide dropdown and then scroll| Pass      |
+| Page links / logo clicked           | Smooth scroll to destination | Pass      |
+| GitHub logo click                   | Open Github repo new tab     | Pass      |
+| All links clicked                   | Open in new tab              | Pass      |
+| Image file path broken              | Alt text                     | Pass      |
+
+
+
+## Validating Code
+
+* HTML
+  * No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/)
+* CSS
+  * No errors were returned when passing through the official [Jigsaw Validator](https://validator.w3.org/)
+* Lighthouse
+  * yo b wys
+* Wave
+  * hi
+
+
+
 
 
