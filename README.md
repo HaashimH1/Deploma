@@ -6,6 +6,7 @@ History of Universitys, a comprehensive website dedicated to exploring the rich 
 
 ## Table of contents
 
+* [User Expectations](#user-expectations)
 * [Features](#interface-structure--features-justification)
   * [General](#overall-features)
   * [Nav Bar](#navigation-bar)
@@ -18,6 +19,16 @@ History of Universitys, a comprehensive website dedicated to exploring the rich 
 * [Deployment](#deployment)
 * [Credits](#credits)
 
+## User Expectations
+
+Any user who come to this site should want to expect the following
+
+* Easy to use Nav bar that is very accessible
+* A brief not extensive look into the history
+* References for facts shown
+* A good structured website that is easy to follow
+* Useful colour scheme for good contast between sections of the page.
+* Semantic structure used for people with asisted technologies.
 
 
 
@@ -26,6 +37,9 @@ History of Universitys, a comprehensive website dedicated to exploring the rich 
 This site consits of 5 main sections: Navigation bar, 3 pages and a footer. The pages are aas floating pages so its one big scrollable website instead of 3 different wesbite files. Note that when this documentation refers to 'smaller' or 'bigger' screens, smaller screens is refering to mostly mobile phones or in particular screen widths of less than 768 pixels, bigger screens is of tablets or desktops of 768 pixels or more in its width.
 
 ### Overall features
+  * Technologies used
+    * HTML5, CSS, JavaScript languages
+    * Git, GitHub, GitPod and Chrome Develepor tools
   * Colour Scheme - I chose to go with a simple black, grey and white scheme for this site as it suits an article feel as theres no necesity for popping colours as this site is directed more towards adults, and is also one of the best contrasting schemes for people who may have visual impairments.
   * Font - A google font know as 'Nunito' as this is a sleek yet eye catching font that is perfect for the aesthetic for a history website.
 
@@ -91,6 +105,7 @@ This site consits of 5 main sections: Navigation bar, 3 pages and a footer. The 
 | GitHub logo click                   | Open Github repo new tab     | Pass      |
 | All links clicked                   | Open in new tab              | Pass      |
 | Image file path broken              | Alt text                     | Pass      |
+| Different Web Browsers              | Same on all browsers         | Pass      |
 
 
 
@@ -119,6 +134,9 @@ This History website was deployed to GitHub pages. The steps to deploy are as fo
 3. Once this is selected, the page will be automatically refreshed with a detailed ribbon display to indicate successful deployment. The live link can be found on GitHub [here](https://haashimh1.github.io/Deploma/)
 
 
+** Note that all my commits with a 'f-' at the begining signifies a Feature added in that commit
+
+
 ### Clone from GitHub
 To clone this repository, follow these steps:
 
@@ -138,6 +156,7 @@ To clone this repository, follow these steps:
 * All facts and referneces compiled and used from [Wikipedia](https://en.wikipedia.org/wiki/University).
 * White box page segments against a Lightgrey background design inspired by an article [Here](https://palestinecampaign.org/resources/history/).
 * Introduction segment inspired by an article [Here](https://www.history.com/topics/european-history/london-england)
+* Feedback from my mentor Akshat Garg @ [Code Institute](https://codeinstitute.net/)
 
 
 
