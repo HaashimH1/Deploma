@@ -157,6 +157,7 @@ To clone this repository, follow these steps:
 * White box page segments against a Lightgrey background design inspired by an article [Here](https://palestinecampaign.org/resources/history/).
 * Introduction segment inspired by an article [Here](https://www.history.com/topics/european-history/london-england)
 * Feedback from my mentor Akshat Garg @ [Code Institute](https://codeinstitute.net/)
+* Favicon is from [Love Running](https://ajgreaves.github.io/love-running-broken/index.html)
 
 
 
